@@ -4,5 +4,5 @@
  power_subset = subset(power, as.Date(power$Date, "%d/%m/%Y") == "2007-02-01"|as.Date(power$Date, "%d/%m/%Y") == "2007-02-02")
  # plot 2
  png(file="plot2.png")
- plot(power_subset$DateTime, power_subset$Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)")
+ plot(power_subset$DateTime, power_subset$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
  dev.off()
